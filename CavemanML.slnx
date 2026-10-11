@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CavemanML.Cli/CavemanML.Cli.csproj" />
+  <Project Path="CavemanML.Tests/CavemanML.Tests.csproj" />
+  <Project Path="CavemanML/CavemanML.csproj" />
+</Solution>

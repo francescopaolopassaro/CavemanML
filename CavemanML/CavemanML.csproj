@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Caveman.ML</RootNamespace>
+    <AssemblyName>CavemanML</AssemblyName>
+    <PackageId>CavemanML</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Francesco Paolo Passaro</Authors>
+    <Company>DigitalSolutions</Company>
+    <Title>CavemanML</Title>
+    <Description>The optional ML tier of the Caveman family, in pure C# (no torch, no onnxruntime, no native code): SynthelionML, a learned per-token prompt compressor (39 languages, 70% target), and PrivacyGuardML, a learned PII confirmation model for Caveman.PrivacyGuard. Models from Hugging Face (digitalsolutionsai), fully offline at inference.</Description>
+    <PackageTags>ai;nlp;llm;prompt-compression;pii;privacy;transformer;onnx-free;offline;caveman</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>caveman-icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/francescopaolopassaro/CavemanML</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/francescopaolopassaro/CavemanML</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Copyright (c) 2026 Passaro Francesco Paolo</Copyright>
+    <PackageReleaseNotes>1.0.0: first release. SynthelionML learned prompt compression and PrivacyGuardML learned PII confirmation, ported from Synthelion 1.2.5 with a pure-C# transformer engine verified against the PyTorch reference.</PackageReleaseNotes>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Caveman" Version="1.4.5" />
+    <PackageReference Include="Caveman.PrivacyGuard" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
+    <None Include="caveman-icon.png" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="CavemanML.Tests" />
+  </ItemGroup>
+
+</Project>

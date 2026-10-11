@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>caveman-ml</AssemblyName>
+    <RootNamespace>Caveman.ML.Cli</RootNamespace>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>caveman-ml</ToolCommandName>
+    <PackageId>CavemanML.Cli</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Francesco Paolo Passaro</Authors>
+    <Company>DigitalSolutions</Company>
+    <Title>CavemanML.Cli</Title>
+    <Description>caveman-ml: command-line manager and runner for the CavemanML models - install / status / verify / update / remove the SynthelionML and PrivacyGuardML models from Hugging Face, compress prompts with the learned compressor, and detect PII.</Description>
+    <PackageTags>ai;nlp;llm;prompt-compression;pii;privacy;cli;dotnet-tool;caveman</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>caveman-icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/francescopaolopassaro/CavemanML</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/francescopaolopassaro/CavemanML</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Copyright (c) 2026 Passaro Francesco Paolo</Copyright>
+    <PackageReleaseNotes>1.0.0: first release.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CavemanML\CavemanML.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="caveman-icon.png" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
